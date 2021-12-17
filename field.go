@@ -24,6 +24,7 @@ func (f *Field) Value() interface{} {
 	return f.value.Interface()
 }
 
+// 嵌入的即匿名的
 func (f *Field) IsEmbedded() bool {
 	return f.field.Anonymous
 }
